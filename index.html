@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Firebase</title>
+</head>
+<script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-firestore.js"></script>
+<body>
+     <label>Nombre</label>
+	<input type="text" name="" id="nombreNuevoUsuario" required>
+	<br>
+	<label>Email</label>
+	<input type="text" name="" id="emailNuevoUsuario">
+	<br>
+	<label>Contraseña</label>
+	<input type="password" name="" id="contraseniaNuevoUsuario">
+<br>
+	<button onclick="agregarDatos()">Subir Informacion</button>
+	<br>
+	<label>ID</label>
+	<input type="text" name="" id="usuarioaEliminar">
+<br>
+	<button onclick="borrarDatosUsuarios()">Eliminar usuario</button>
+	<br>
+	<button onclick="editarUsuario()">Editar usuario</button>
+	<br>
+	<button onclick="leerDatosUsuario()">Leer</button>
+
+</body>
+<script type="text/javascript" src="js.js"></script>
+</html>
