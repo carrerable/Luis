@@ -1,31 +1,344 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-	<title>Firebase</title>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title> A&D</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/logo.png" rel="icon">
+  <link href="assets/img/logo.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Arsha - v2.3.1
+  * Template URL: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
 </head>
-<script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-firestore.js"></script>
+
 <body>
-     <label>Nombre</label>
-	<input type="text" name="" id="nombreNuevoUsuario" required>
-	<br>
-	<label>Email</label>
-	<input type="text" name="" id="emailNuevoUsuario">
-	<br>
-	<label>Contraseña</label>
-	<input type="password" name="" id="contraseniaNuevoUsuario">
-<br>
-	<button onclick="agregarDatos()">Subir Informacion</button>
-	<br>
-	<label>ID</label>
-	<input type="text" name="" id="usuarioaEliminar">
-<br>
-	<button onclick="borrarDatosUsuarios()">Eliminar usuario</button>
-	<br>
-	<button onclick="editarUsuario()">Editar usuario</button>
-	<br>
-	<button onclick="leerDatosUsuario()">Leer</button>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center">
+
+      <h1 class="logo mr-auto"><a href="index.html">A&D México </a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li class="active"><a href="index.html">Principal</a></li>
+          <li><a href="#about">Acerca de</a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
+          <h1>Alcoholismo y drogadicción en jovenes Méxicanos     </h1>
+          <h2>El objetivo general del proyecto es dar a conocer el grave problema del alcoholismo y la drogadicción en jovenes y adolescentes de la ciudad de México. Para que sociedad y gobierno hagan conciencia y trabajen juntos para combatir este problema. Ya que estas adicciones, nos acarrean graves problemas sociales, culturales, económicos y políticos.
+          </h2>
+          <div class="d-lg-flex">
+            
+            <a href="https://www.youtube.com/watch?v=-GKyYxeUK5c" class="venobox btn-watch-video" data-vbtype="video" data-autoplay="true"> Ver video <i class="icofont-play-alt-2"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-6 order-1 order-lg-4 hero-img" data-aos="zoom-in" data-aos-delay="200">
+          <img src="assets/img/princpal.jpg" class="img-fluid animated" alt="">
+        </div>
+      </div>
+    </div>
+
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+   
+
+    <!-- ======= About Us Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Acerca de</h2>
+        </div>
+
+        <div class="row content">
+          <div class="col-lg-12">
+            <p>
+              Este articulo y analiza describe de forma integral, un problema de interés general,  especialmente se enfoca en la implementación de soluciones, valorando las implicaciones y el impacto en el ámbito social, económico , cultural, político y de salud.  Es por eso por lo que se plantea la necesidad de revisar, formular y desarrollar este proyecto, en donde se requiere la inclusión participativa y en conjunto de la sociedad y gobierno, para lograr tener un mayor impacto. 
+            </p>
+            <ul>
+              <h1>Metas</h1>
+              <li><i class="ri-check-double-line"></i> Crear campañas de prevención del alcoholismo y la drogadicción </li>
+              <li><i class="ri-check-double-line"></i> Reducir el alcoholismo y la drogadicción en jovenes y adolescentes. </li>
+              <li><i class="ri-check-double-line"></i>Reformar las leyes actuales, en contra de los traficantes de drogas y de los vendedores de alcohol a menores de edad.</li>
+            </ul>
+          </div>
+          <div class="col-lg-12 pt-4 pt-lg-0">
+            <p>
+              Con la creación de los talleres para padres sobre las causas y consecuencias del uso de las drogas y el alcohol en edad temprana, se busca que los padres de familia estén conscientes del daño que les puede causar 
+              a sus hijos el hacer uso de las drogas y el alcohol. También se busca que los padres les inculquen valores a sus hijos desde pequeños y que se desenvuelvan en un ambiente familiar, para que cuando los niños crezcan una buena cultura que dificulte que los niños caigan en algún vicio. 
+            </p>
+          </div>
+          <div class="col-lg-12 pt-4 pt-lg-0">
+            <p>
+              Y con las campañas de prevención sobre el alcoholismo y la drogadicción en los jovenes y adolescentes . Se pretende reducir el consumo de alcohol y drogas en los jovenes de mi comunidad. Ya que este problema nos genera grandes perdidas humanas y económicas, incrementa la delincuencia y la violencia familiar y social. 
+              En este contexto podemos decir que al reducir el alcoholismo y la drogadicción, se verán beneficiados los diferentes ámbitos que están involucrados en este grave problema.
+               
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Us Section -->
+
+    <!-- ======= Why Us Section ======= -->
+    <section id="why-us" class="why-us section-bg">
+      <div class="container-fluid" data-aos="fade-up">
+
+        <div class="row">
+
+          <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-1">
+
+            <div class="content">
+              <h3>Causas <strong>alcholismo y la drogadicción</strong></h3>
+              <p>
+                Estos factores están íntimamente relacionados con el consumo de 
+                alcohol y drogas, porque son causas que afectan la estabilidad
+                  emocional de los niños, jovenes y adolescentes mexicanos. 
+                  Y al no saber como actuar buscan una salida fácil que los haga
+                   olvidarse de su realidad, lo que los lleva a emborracharse o drogarse. 
+
+              </p>
+            </div>
+
+            <div class="accordion-list">
+              <ul>
+                <li>
+                  <a data-toggle="collapse" class="collapse" href="#accordion-list-1"><span>01</span> Problemas familiares y rechazo social </a>
+                   
+                </li>
+
+                <li>
+                  <a data-toggle="collapse" href="#accordion-list-2" class="collapsed"><span>02</span> Abuso sexual y violencia familiar</a>
+                    
+                 
+                </li>
+
+                <li>
+                  <a data-toggle="collapse" href="#accordion-list-3" class="collapsed"><span>03</span> Fácil accso a las drogas y el alcohol
+                  </a>
+                  
+                </li>
+
+              </ul>
+            </div>
+
+          </div>
+
+          <div class="col-lg-4 align-items-stretch order-1 order-lg-2 img" style='background-image: url("assets/img/css.jpg");' data-aos="zoom-in" data-aos-delay="150">&nbsp;</div>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-1">
+
+            <div class="content">
+              <h3>Consecuencias <strong>alcholismo y la drogadicción</strong></h3>
+              <p>
+                El alcoholismo y la drogadicción en adolescentes mexicanos,
+                 cada vez es más grave. Ya que año con año va en aumento. 
+                 Por lo que han crecido los problemas sociales, políticos,
+                  económicos y culturales. Por eso es de suma importancia crear estrategias 
+                  para combatir este grave problema.   
+
+
+              </p>
+            </div>
+
+            <div class="accordion-list">
+              <ul>
+                <li>
+                  <a data-toggle="collapse" class="collapse" href="#accordion-list-1"><span>01</span> El consumo de drogas y alcohol genera violencia en todas sus versiones. </a>
+                   
+                </li>
+
+                <li>
+                  <a data-toggle="collapse" href="#accordion-list-2" class="collapsed"><span>02</span> Exclusión social, bajo rendimiento escolar, depresión y desintegración familiar.</a>
+                    
+                 
+                </li>
+
+                <li>
+                  <a data-toggle="collapse" href="#accordion-list-3" class="collapsed"><span>03</span> Trastornos mentales permanentes o crónicos por el uso y abuso de drogas y alcohol
+                  </a>
+                  
+                </li>
+
+              </ul>
+            </div>
+
+          </div>
+
+          <div class="col-lg-4 align-items-stretch order-1 order-lg-2 img" style='background-image: url("assets/img/why-us.jpg");' data-aos="zoom-in" data-aos-delay="150">&nbsp;</div>
+        </div>
+
+      </div>
+    </section><!-- End Why Us Section -->
+
+
+     
+
+    <!-- ======= Frequently Asked Questions Section ======= -->
+    <section id="faq" class="faq section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Orientación</h2>
+          <p></p>
+        </div>
+
+        <div class="faq-list">
+          <ul>
+            <li data-aos="fade-up" data-aos-delay="100">
+              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" class="collapse" href="#faq-list-1">¿Cómo identificar que un hij@ esta consumiendo alcohol o alguna droga? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-1" class="collapse" data-parent=".faq-list">
+                <ul>
+                  <li>Exaltación y exceso de confianza.</li>
+                  <li>Estado de alerta más intenso.</li>
+                  <li>Mayor energía e inquietud.</li>
+                  <li>Cambios de conducta o agresión.</li>
+                  <li>Dicción rápida o incoherente.</li>
+                  <li>Pupilas dilatadas.</li>
+                  <li>Confusión, delirios y alucinaciones..</li>
+                  <li>Irritabilidad, ansiedad o paranoia.</li>
+                </ul>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="200">
+              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-2" class="collapsed">¿Cómo influye la familia en la recuperación? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-2" class="collapse" data-parent=".faq-list">
+                <p>
+                  La familia y el entorno más próximo del menor son de vital importancia pues
+es donde tiene lugar el inicio de su integración a la sociedad y su autonomía personal. Es el primer contexto socializador donde el adolescente empieza a adquirir
+identidad propia, donde se encuentran las figuras de modelaje de las que el niño/a
+y el adolescente van a aprender las pautas básicas de socialización. 
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="300">
+              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-3" class="collapsed">Prevención <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-3" class="collapse" data-parent=".faq-list">
+                <p>
+                  Además de ofrecer cierta contención apropiada a estos menores y de utilizar la
+relación con el grupo de iguales como metodología fundamental para el trabajo
+educativo, conviene desarrollar un planteamiento educativo intensivo, con una
+atención individualizada más acentuada. El seguimiento del menor se personaliza,
+lo que no significa que la intervención sea solamente individual, toda vez que la
+prioridad en la atención se realiza a través del trabajo grupal.
+                </p>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+
+      </div>
+    </section><!-- End Frequently Asked Questions Section -->
+
+     <!-- ======= Cliens Section ======= -->
+     <section id="cliens" class="cliens section-bg">
+      <div class="container">
+
+        <div class="row" data-aos="zoom-in">
+
+          <div class="col-lg-3 col-md-3 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/clients/1.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-3 col-md-3 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/clients/2.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-3 col-md-3 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/clients/3.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-3 col-md-3 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/clients/4.png" class="img-fluid" alt="">
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Cliens Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="container footer-bottom clearfix">
+      <div class="copyright">
+        &copy; Copyright <strong><span>A&A</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/ -->
+        Designed by <a href="https://bootstrapmade.com/">Alejandro Delgado Gutierrez</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top"><i class="ri-arrow-up-line"></i></a>
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
+  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
 
 </body>
-<script type="text/javascript" src="js.js"></script>
+
 </html>
